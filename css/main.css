@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: black;
+}
+
+.start {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    color: white;
+    font-size: 2em;
+}
+
+.navbar a{
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#jumbotron a {
+    position: absolute;
+    top: 90vh;
+    right: 4vw;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #menu-txt {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
