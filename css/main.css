@@ -71,7 +71,7 @@ body:hover > #trailer {
     display: flex;  
     flex-wrap: wrap;
     gap: 8px;  
-    max-width: 1250px;
+    max-width: 1070px;
     width: calc(100% - 20px);
 }
 
