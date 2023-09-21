@@ -57,7 +57,7 @@ body:hover > #trailer {
 }
 
 /* Main Section */
-#main {
+.main {
     align-items: center;
     display: flex;
     height: 100vh;
@@ -68,6 +68,7 @@ body:hover > #trailer {
 }
 
 #cards {
+    align-items: center;
     display: flex;  
     flex-wrap: wrap;
     gap: 8px;  
@@ -193,6 +194,7 @@ i {
     margin-top: 8px;
 }
 
+/* Responsiveness - pretty much messy*/
 @media(max-width: 1500px) {
     .card-template {
         flex-shrink: 1;
@@ -206,7 +208,7 @@ i {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     body {
         align-items: flex-start;  
         overflow: auto;
@@ -222,6 +224,16 @@ i {
         height: 220px;
         width: calc(50% - 4px);
     }
+
+    #trailer{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) and (max-height: 1400px) {
+    .start {
+        height: 70vh;
+    }
 }
 
 @media (max-width: 600px) {
@@ -230,6 +242,9 @@ i {
     }
     #menu-icon {
         display: block;
+    }
+    .start {
+        height: 85vh;
     }
 }
 
@@ -262,10 +277,22 @@ i {
         font-size: 0.8em;
         margin-top: 4px;
     }
+    .start {
+        height: 70vh;
+    }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 600px) and (min-height: 1000px){
+    .start {
+        height: 60vh;
+    }
+}
+
+@media(max-width: 340px) {
     .card-template {
         width: 100%;
+    }
+    .main {
+        height: fit-content;
     }
 }
